@@ -167,7 +167,7 @@ source scripts/processsourcefiles.sh
 
 # BUILD MARKDOWN
 # Start HUGO build
-hugo $SERVER --disableFastRender --baseURL "" --environment "$BUILDENVIRONMENT" --bind=0.0.0.0 --gc
+exec hugo $SERVER --disableFastRender --baseURL "" --environment "$BUILDENVIRONMENT" --bind=0.0.0.0 --gc
 
 if [ -z "$SERVER" ]; then
   echo ''
