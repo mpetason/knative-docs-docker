@@ -30,8 +30,7 @@ This will run the service on port 9001, but you can pick any port you want. The 
 Diffs on script files (edited so that mounted volumes aren't deleted or copied over)
 
 ```
-$ diff localbuild.sh ../../knative.dev/website/scripts/localbuild.sh
-
+$ diff localbuild.sh ../knative.dev/website/scripts/localbuild.sh 
 153,157c153,157
 <       SERVER="server "
 <      # if [ "${OPTARG}" = "reload" ]; then
@@ -45,7 +44,7 @@ $ diff localbuild.sh ../../knative.dev/website/scripts/localbuild.sh
 >         LIVERELOAD=" --disableFastRender --renderToDisk"
 >       fi
 170c170
-< hugo $SERVER --disableFastRender --baseURL "" --environment "$BUILDENVIRONMENT" --bind=0.0.0.0 --gc
+< exec hugo $SERVER --disableFastRender --baseURL "" --environment "$BUILDENVIRONMENT" --bind=0.0.0.0 --gc
 ---
 > hugo $SERVER --baseURL "" --environment "$BUILDENVIRONMENT" --gc
 178d177
