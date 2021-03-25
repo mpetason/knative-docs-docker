@@ -1,6 +1,6 @@
 # knative-docs-docker
 
-### Works on Linux Only At the momemt !!! Not working on Mac !!!
+### Works on Linux Only At the moment !!! Not working on Mac !!!
 
 ```bash
 git clone git@github.com:mpetason/knative-docs-docker.git
