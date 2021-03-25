@@ -1,8 +1,16 @@
 # knative-docs-docker
 
-Clone
+```bash
+git clone git@github.com:mpetason/knative-docs-docker.git
+```
 
+```bash
+cd knative-docs-docker
+```
+
+```bash
 docker build -t {USER/knative-docs} .
+```
 
 There are custom scripts that avoid deletion of this folder in processsourcefiles. If using the default version of the script (not in the Dockerfile image build) then it will delete the directory. Test this out using a test directory you have cloned and change GOPATH to the test directory. (/home/user/testing/docs/docs)
 
