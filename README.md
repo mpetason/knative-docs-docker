@@ -13,6 +13,7 @@ This will run the service on port 9001, but you can pick any port you want. The 
 
 Diffs on script files (edited so that mounted volumes aren't deleted or copied over)
 
+```
 $ diff localbuild.sh ../../knative.dev/website/scripts/localbuild.sh
 
 153,157c153,157
@@ -33,9 +34,9 @@ $ diff localbuild.sh ../../knative.dev/website/scripts/localbuild.sh
 > hugo $SERVER --baseURL "" --environment "$BUILDENVIRONMENT" --gc
 178d177
 < 
+```
 
-
-
+```
 $ diff processsourcefiles.sh ../../knative.dev/website/scripts/processsourcefiles.sh 
 11c11
 < # rm -rf content/en
@@ -51,3 +52,4 @@ $ diff processsourcefiles.sh ../../knative.dev/website/scripts/processsourcefile
 >   cp -r ../docs content/en/
 187d186
 < 
+```
